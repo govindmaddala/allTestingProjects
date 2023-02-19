@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Chailntl">
+
+<listeners>
+	<listener class-name="com.Chailntl.tests.Listener"/>
+</listeners>
+  <test thread-count="5" name="Registration">
+    <classes>
+	<class name="com.Chailntl.tests.PaymentTest"/>
+    </classes>
+</test>
+</suite> <!-- Suite -->

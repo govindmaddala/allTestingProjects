@@ -1,0 +1,4 @@
+09:59:41.543 [main] INFO  testCases.TC_1_RegistrationTest - TermsPage_TC_2 Test is finished successfully and browser is closed
+09:59:48.469 [main] INFO  testCases.TC_1_RegistrationTest - Browser is invoked for TC_1_RegistrationTest
+10:00:18.827 [main] INFO  testCases.TC_1_RegistrationTest - terms page is opened and cross-checked with the page title through TestNG's Assert
+10:00:18.831 [AsyncHttpClient-1-5] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/API-Automation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/API-Automation/APIAutomation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Chai" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DB_Testing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Dave Haeffner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ParaBank" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SelenumGrid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UniCreds" vcs="Git" />
+  </component>
+</project>

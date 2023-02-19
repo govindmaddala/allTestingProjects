@@ -1,0 +1,42 @@
+package com.testScripts;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.base.BaseClass;
+import com.pageObjects.HomePage;
+
+public class ContextMenuTest extends BaseClass {
+	
+	private WebDriver lDriver;
+	private HomePage homePage;
+	private Actions actions;
+	
+	@BeforeTest
+	public void openBrowser() throws IOException {
+		lDriver = getDriver();
+		maximizeWindow();
+		lDriver.get(pageUrl());
+		homePage = new HomePage(lDriver);
+		homePage.contextMenu().click();
+	}
+	
+	@Test(priority = 1)
+	public void contextClick() {
+		actions = new Actions(lDriver);
+		WebElement boxElement = lDriver.findElement(By.id("hot-spot"));
+		actions.contextClick(boxElement).build().perform();
+		String text = lDriver.switchTo().alert().getText();
+		System.out.println(text);
+		lDriver.switchTo().alert().accept();
+	}
+	
+	
+
+}

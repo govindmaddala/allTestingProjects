@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ParseStringToJSON.java&apos; to &apos;JIRA/src/test/java/utils&apos;&#x0D;&#x0A;- Original project: &apos;APIAutomation&apos;&#x0D;&#x0A;- Destination element: &apos;JIRA/src/test/java/utils&apos;&#x0D;&#x0A;- Original element: &apos;utils.ParseStringToJSON.java&apos;" description="Copy compilation unit" destination="=JIRA/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;utils" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;utils{ParseStringToJSON.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1668915829457" units="1" version="1.0"/>
+</session>

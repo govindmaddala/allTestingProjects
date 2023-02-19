@@ -1,0 +1,29 @@
+[INFO ] 2022-10-26 17:40:16.084 [main] StepDefinition - Browser is launched
+[INFO ] 2022-10-26 17:40:16.897 [main] StepDefinition - Url is entered
+[INFO ] 2022-10-26 17:40:17.051 [main] StepDefinition - User credentials are entered
+[INFO ] 2022-10-26 17:40:23.444 [main] StepDefinition - Login is clicked
+[INFO ] 2022-10-26 17:40:23.454 [main] StepDefinition - Page title is checked successfully
+[INFO ] 2022-10-26 17:40:23.505 [main] StepDefinition - Customer creation operation is started
+[FATAL] 2022-10-26 17:40:23.548 [main] StepDefinition - Error is at 4th line
+[INFO ] 2022-10-26 17:40:23.731 [main] StepDefinition - Screenshot is saved
+[INFO ] 2022-10-26 17:40:28.246 [main] StepDefinition - Browser is launched
+[INFO ] 2022-10-26 17:40:29.024 [main] StepDefinition - Url is entered
+[INFO ] 2022-10-26 17:40:32.638 [main] StepDefinition - login is clicked
+[INFO ] 2022-10-26 17:40:32.643 [main] StepDefinition - Page title is checked successfully
+[INFO ] 2022-10-26 17:40:34.323 [main] StepDefinition - Logout is clicked
+[INFO ] 2022-10-26 17:40:34.329 [main] StepDefinition - Page title is checked successfully
+[INFO ] 2022-10-26 17:40:36.877 [main] StepDefinition - Browser is closed
+[INFO ] 2022-10-26 17:40:38.899 [main] StepDefinition - Browser is launched
+[INFO ] 2022-10-26 17:40:39.730 [main] StepDefinition - Url is entered
+[INFO ] 2022-10-26 17:40:43.543 [main] StepDefinition - login is clicked
+[INFO ] 2022-10-26 17:40:43.547 [main] StepDefinition - Page title is checked successfully
+[INFO ] 2022-10-26 17:40:45.172 [main] StepDefinition - Logout is clicked
+[INFO ] 2022-10-26 17:40:45.179 [main] StepDefinition - Page title is checked successfully
+[INFO ] 2022-10-26 17:40:45.353 [main] StepDefinition - Browser is closed
+[INFO ] 2022-10-26 17:40:47.278 [main] StepDefinition - Browser is launched
+[INFO ] 2022-10-26 17:40:48.573 [main] StepDefinition - Url is entered
+[INFO ] 2022-10-26 17:40:58.583 [main] StepDefinition - login is clicked
+[INFO ] 2022-10-26 17:40:58.588 [main] StepDefinition - Page title is checked successfully
+[INFO ] 2022-10-26 17:41:00.211 [main] StepDefinition - Logout is clicked
+[FATAL] 2022-10-26 17:41:00.225 [main] StepDefinition - Error is at 25th line
+[FATAL] 2022-12-09 11:32:14.682 [main] StepDefinition - Error is at 4th line

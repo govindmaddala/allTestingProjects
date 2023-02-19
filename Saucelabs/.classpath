@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/guava-18.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/httpclient-4.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/httpcore-4.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/selenium-api-2.47.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/selenium-chrome-driver-2.47.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/Jars/Selenium_jar_files/selenium-remote-driver-2.47.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/govindmaddala/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.2/selenium-chrome-driver-4.1.2.jar" sourcepath="C:/Users/govindmaddala/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.1.2/selenium-chrome-driver-4.1.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
+			<attribute name="maven.artifactId" value="selenium-chrome-driver"/>
+			<attribute name="maven.version" value="4.1.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

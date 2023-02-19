@@ -1,0 +1,48 @@
+package com.testScripts;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.asserts.SoftAssert;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BrokenImages {
+	
+	public static WebDriver driver;
+	
+	public static void main(String[] args) throws MalformedURLException, IOException {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		
+		String pageURL = "http://the-internet.herokuapp.com/";
+		
+		driver.get(pageURL);
+		
+		driver.findElement(By.cssSelector("[href*='broken_images']")).click();
+		
+		List<WebElement> imagesList = driver.findElements(By.cssSelector(".example img"));
+		
+		SoftAssert sa = new SoftAssert();
+		for (WebElement image: imagesList) {
+			String imageName = image.getAttribute("src");
+			String url = pageURL + "//"+ imageName;
+			HttpURLConnection link = (HttpURLConnection) new URL(url).openConnection();
+			link.setRequestMethod("HEAD");
+			int responseCode = link.getResponseCode();
+			sa.assertTrue(responseCode < 400, imageName + " image's status code should be less than 200 but found "+ String.valueOf(responseCode));
+		}
+		sa.assertAll();
+		
+		driver.quit();
+	}
+	
+
+}

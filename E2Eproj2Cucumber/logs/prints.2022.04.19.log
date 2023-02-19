@@ -1,0 +1,5 @@
+17:10:16.273 [TestNG-tests-1] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x9d6398e52182be0f
+17:12:08.577 [TestNG-tests-4] INFO  LearnNew.E2Eproj.TestFail - HomePageClassObj is executed
+17:12:08.899 [TestNG-tests-3] INFO  LearnNew.E2Eproj.HomePageClassObj - HomePageClassObj is executed
+17:12:47.408 [TestNG-tests-2] INFO  LearnNew.E2Eproj.HomePageClassObj - ValidatingObjects is executed
+17:13:02.521 [TestNG-tests-2] INFO  LearnNew.E2Eproj.HomePageClassObj - ValidatingObjects is done

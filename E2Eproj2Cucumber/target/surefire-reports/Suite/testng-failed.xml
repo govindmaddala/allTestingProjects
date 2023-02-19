@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="LearnNew.E2Eproj.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="TestFail(failed)" verbose="0">
+    <classes>
+      <class name="LearnNew.E2Eproj.FailureTest">
+        <methods>
+          <include name="ss"/>
+          <include name="close"/>
+          <include name="click"/>
+        </methods>
+      </class> <!-- LearnNew.E2Eproj.FailureTest -->
+    </classes>
+  </test> <!-- TestFail(failed) -->
+  <test thread-count="5" parallel="tests" name="HomePageInheritence(failed)" verbose="0">
+    <classes>
+      <class name="LearnNew.E2Eproj.HomePageInheritenceTest">
+        <methods>
+          <include name="open"/>
+          <include name="homePage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- LearnNew.E2Eproj.HomePageInheritenceTest -->
+    </classes>
+  </test> <!-- HomePageInheritence(failed) -->
+  <test thread-count="5" parallel="tests" name="ValidatingObjects(failed)" verbose="0">
+    <classes>
+      <class name="LearnNew.E2Eproj.ValidatingObjectsTest">
+        <methods>
+          <include name="open"/>
+          <include name="homePage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- LearnNew.E2Eproj.ValidatingObjectsTest -->
+    </classes>
+  </test> <!-- ValidatingObjects(failed) -->
+  <test thread-count="5" parallel="tests" name="HomePageClassObj(failed)" verbose="0">
+    <classes>
+      <class name="LearnNew.E2Eproj.HomePageClassObjTest">
+        <methods>
+          <include name="open"/>
+          <include name="homePage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- LearnNew.E2Eproj.HomePageClassObjTest -->
+    </classes>
+  </test> <!-- HomePageClassObj(failed) -->
+</suite> <!-- Failed suite [Suite] -->

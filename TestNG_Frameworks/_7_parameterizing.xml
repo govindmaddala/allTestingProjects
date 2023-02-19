@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG">
+<parameter name="Suite" value="This is parameter at suite level"/>
+  <test name="parameterizing">
+	<parameter name="ab" value="ab at test level"/>
+	<parameter name="ba" value="ba at test level"/>
+	<parameter name="num" value="123"/>
+    <classes>
+      <class name="_6_a_parameterizing"/>
+	  <class name="_6_b_parameterizing"/>
+	</classes>
+  </test>
+  <test name="parameterising">
+	<parameter name="cd" value="cd at test level"/>
+	<parameter name="dc" value="dc at test level"/>
+    <classes>
+      <class name="_6_c_parameterizing"/>
+	  <class name="_6_d_parameterizing"/>
+	</classes>
+  </test>
+
+  <test name="para">
+  <classes>
+	<class name="_6_dataprovider"/>
+  </classes>
+  </test>
+</suite> <!-- Suite -->

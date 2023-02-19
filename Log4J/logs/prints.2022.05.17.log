@@ -1,0 +1,10 @@
+22:07:23.394 [main] DEBUG alpha.demoA - alpha Debug
+22:07:23.474 [main] INFO  alpha.demoA - alpha Info
+22:07:23.474 [main] ERROR alpha.demoA - alpha I'm error
+22:07:23.474 [main] FATAL alpha.demoA - alpha I'm fatal
+11:15:55.268 [main] DEBUG alpha.demoA - alpha Debug
+11:15:55.277 [main] INFO  alpha.demoA - alpha Info
+11:15:55.277 [main] ERROR alpha.demoA - alpha I'm error
+11:15:55.277 [main] FATAL alpha.demoA - alpha I'm fatal
+11:16:06.266 [main] DEBUG alpha.demoA - alpha Debug
+11:16:06.275 [main] INFO  alpha.demoA - alpha Info

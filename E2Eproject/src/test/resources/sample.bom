@@ -1,0 +1,12 @@
+brooklyn.catalog:
+  id: LearnNew.E2Eproject.MySampleInCatalog
+  version: "1.0"
+  itemType: template
+  description: My Sample
+  displayName: MySample
+  iconUrl: classpath:///sample-icon.png
+  libraries:
+  - file:///Path/to/archetype/sample/target/E2Eproject-0.0.1-SNAPSHOT.jar
+  item:
+    services:
+    - type: LearnNew.E2Eproject.MySample

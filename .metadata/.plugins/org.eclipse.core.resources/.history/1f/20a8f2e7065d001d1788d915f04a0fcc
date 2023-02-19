@@ -1,0 +1,56 @@
+package com.testScripts;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.base.BaseClass;
+import com.pageObjects.BrokenImagesPage;
+import com.pageObjects.HomePage;
+
+public class BrokenImagesTest extends BaseClass {
+	
+	private WebDriver lDriver;
+	private HomePage homePage;
+	private BrokenImagesPage brokenImagesPage;
+	@BeforeTest
+	public void openWebSIte() throws IOException {
+		lDriver = getDriver();
+		maximizeWindow();
+		lDriver.get(pageUrl());
+		homePage = new HomePage(lDriver);
+		brokenImagesPage = new BrokenImagesPage(lDriver);
+		homePage.brokenImages().click();
+	}
+	
+	@Test
+	protected void checkBrokenImages() throws MalformedURLException, IOException {
+		List<WebElement> imageElements = brokenImagesPage.getImagesAndAvatar();
+		SoftAssert sa = new SoftAssert();
+		for (WebElement image: imageElements) {
+			String imageName = image.getAttribute("src");
+			String url = pageUrl() + "//"+ imageName;
+			HttpURLConnection link = (HttpURLConnection) new URL(url).openConnection();
+			link.setRequestMethod("HEAD");
+			int responseCode = link.getResponseCode();
+			sa.assertTrue(responseCode < 400, imageName + " is broken one" );
+		}
+		sa.assertAll();
+	}
+	
+	@AfterTest
+	public void tearDown() {
+		lDriver.quit();
+	}
+
+}
